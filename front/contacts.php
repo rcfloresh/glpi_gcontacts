@@ -246,7 +246,9 @@ $css=Html::css('callContainet.css');
 
                         <?php if(IsAuth()) {?>
                             <a class="custom_btn" onclick="addnewuser()"><?php echo $local['new_accaunt'] ?></a>
+                            <?php if(GoogleAccountsExists()) {?>
                             &nbsp;&nbsp;&nbsp;&nbsp;<a class="custom_btn" onclick="sync()"><?php echo $local['sync'] ?></a>
+                            <?php }?>
                         <?php } else {?>
                             <span><?php echo $local['error'] ?></span>
                         <?php }?>
