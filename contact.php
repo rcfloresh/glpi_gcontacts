@@ -36,3 +36,10 @@ function IsAuth(){
 		        return true;
 	return false;
 }
+function GoogleAccountsExists(){
+    $json = file_get_contents(MAIN_SETTINGS);
+    $conf = json_decode($json);
+    if(count((array)$conf) > 1)
+        return true;
+    return false;
+}
