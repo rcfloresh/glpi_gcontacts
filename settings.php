@@ -1,7 +1,7 @@
 <?php
 
-define("SETTINGS",GLPI_PLUGIN_DOC_DIR."/googlecontactapi");
-define("MAIN_SETTINGS",GLPI_PLUGIN_DOC_DIR."/googlecontactapi/config.json");
+define("SETTINGS",GLPI_PLUGIN_DOC_DIR."/gcontacts");
+define("MAIN_SETTINGS",GLPI_PLUGIN_DOC_DIR."/gcontacts/config.json");
 
 if($CFG_GLPI["languages"][$_SESSION['glpilanguage']][3] == "ru")
     define("LANGUAGE", "ru");
