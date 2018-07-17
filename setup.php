@@ -2,11 +2,11 @@
  
 function plugin_version_googlecontactsapi() {
    return array('name'           => "Google Contact API",
-                'version'        => '1.3.0',
-                'author'         => 'Vlasov Dima',
+                'version'        => '1.3.1',
+                'author'         => 'Triton Studio',
                 'license'        => 'GPLv2+',
-                'homepage'       => '',
-                'minGlpiVersion' => '0.85');
+                'homepage'       => 'https://github.com/TritonStudio/glpi_gcontacts',
+                'minGlpiVersion' => '9.1');
 }
 
 function plugin_googlecontactsapi_check_config() {
